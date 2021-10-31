@@ -19,7 +19,7 @@ class CreateBloodPressureReading extends Component
     {
         $this->validate([
             'systolic_reading' => ['required', 'integer'],
-            'diastolic_reading' => ['required', 'integer']
+            'diastolic_reading' => ['required', 'integer', 'lt:systolic_reading']
         ]);
 
         BloodPressureReading::query()->insert([

@@ -10,3 +10,9 @@
         {{ $row->diastolic_pressure }}
     </div>
 </x-livewire-tables::table.cell>
+
+<x-livewire-tables::table.cell>
+    <div class="text-sm font-medium text-gray-900">
+        {{ $this->getBloodPressureStatus($row->systolic_pressure, $row->diastolic_pressure) }}
+    </div>
+</x-livewire-tables::table.cell>
