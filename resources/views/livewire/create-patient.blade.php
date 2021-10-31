@@ -30,9 +30,9 @@
             </div>
 
             <div class="flex justify-between mb-6">
-                <button class="bg-red-100 text-white rounded py-3 px-4 hover:bg-yellow-700 w-full">
-                    {{ __('Cancel') }}
-                </button>
+                <a href="{{ route('dashboard') }}" class="text-center text-white bg-gray-300 rounded py-3 px-4 hover:bg-transparent w-full">
+                    {{ __('<<< Back') }}
+                </a>
 
                 <button class="bg-yellow-600 text-white rounded py-3 px-4 hover:bg-yellow-700 w-full">
                     {{ __('Save') }}

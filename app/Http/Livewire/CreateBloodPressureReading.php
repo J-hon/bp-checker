@@ -3,7 +3,6 @@
 namespace App\Http\Livewire;
 
 use App\Models\BloodPressureReading;
-use App\Models\Patient;
 use Livewire\Component;
 
 class CreateBloodPressureReading extends Component
@@ -32,7 +31,7 @@ class CreateBloodPressureReading extends Component
         ]);
 
         session()->flash('message', 'Reading saved successfully');
-        return redirect(route('dashboard'));
+        return redirect(route('blood-pressure-reading.create', ['patient_id' => $this->patient_id]));
     }
 
     public function render()

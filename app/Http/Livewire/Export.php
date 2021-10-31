@@ -20,7 +20,7 @@ class Export extends Component
 
         $batch = Bus::batch([
             new ExportJob()
-        ])->dispatch();
+        ])->name('export')->dispatch();
 
         $this->batchId = $batch->id;
     }

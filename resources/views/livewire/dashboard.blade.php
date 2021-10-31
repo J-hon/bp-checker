@@ -9,17 +9,17 @@
 
         <div>&nbsp;</div>
 
-        @auth
-            <div class="mr-4">
-                <a href="{{ route('logout') }}" class="text-red-500 border bg-transparent font-semibold py-2 px-4 rounded">
-                    <i class="fas fa-sign-out-alt"></i>
-                    Log out
-                </a>
-            </div>
-        @endauth
+        <div class="mr-4">
+            <a href="{{ route('logout') }}" class="text-red-500 border bg-transparent font-semibold py-2 px-4 rounded">
+                <i class="fas fa-sign-out-alt"></i>
+                Log out
+            </a>
+        </div>
     </div>
 
-    <livewire:export />
+    @if ($query_count > 0)
+        <livewire:export />
+    @endif
 
     <div class="max-w-7xl mx-auto">
         <div>
