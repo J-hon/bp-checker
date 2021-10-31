@@ -24,7 +24,7 @@ The project requires the following dependencies to run
 
 Run the following to get started
 ```sh
-git clone https://github.com/sauce-kode/bpstore.git
+git clone https://github.com/J-hon/bp-checker.git
 
 cd bp-checker
 
@@ -40,7 +40,7 @@ Create .env file
 `cp .env.example .env`
 
 Fill in your database credentials in the .env file
-```sh
+```
 DB_DATABASE
 DB_USERNAME
 DB_PASSWORD
@@ -50,9 +50,16 @@ Run the database migration
 
 `php artisan migrate`
 
-Seed your database
+Seed your database (To seed a nurse and 50,000 patients)
 
 `php artisan db:seed`
+
+```
+Login credentials of seeded nurse to login:
+
+Email - johndoe@gmail.com
+Password - password
+```
 
 Start your server
 
@@ -64,4 +71,4 @@ Start the queue (Queue is used in case of large data exports)
 
 Run tests
 
-`php artisan test` or `"./vendor/bin/phpunit"`
+`php artisan test`
