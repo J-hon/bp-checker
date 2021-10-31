@@ -19,6 +19,8 @@
         @endauth
     </div>
 
+    <livewire:export />
+
     <div class="max-w-7xl mx-auto">
         <div>
             <livewire:patient-table />
